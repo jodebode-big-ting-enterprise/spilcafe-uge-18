@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Spilcafé Spiloversigt</title>
+
+<link rel="stylesheet" href="css/app.css">
+
+<link
+rel="shortcut icon"
+href="../../img/favicon.png"
+type="image/x-icon"
+/>
+
+</head>
+
+
+<body>
+
+<header>
+
+<h1>🎲 Spilcafé Spiloversigt</h1>
+
+<p class="subtitle">
+Find dit næste brætspil
+</p>
+
+</header>
+
+
+
+<main>
+
+<section class="controls">
+
+<div class="control-group">
+
+<label for="search-input">
+Søg spil
+</label>
+
+<input
+type="text"
+id="search-input"
+placeholder="Fx Catan, Azul eller Wingspan"
+/>
+
+</div>
+
+
+<div class="control-group">
+
+<label for="genre-select">
+Kategori
+</label>
+
+<select id="genre-select">
+
+<option value="all">
+Alle kategorier
+</option>
+
+</select>
+
+</div>
+
+
+<div class="control-group">
+
+<label for="sort-select">
+Sortering
+</label>
+
+<select id="sort-select">
+
+<option value="none">
+Ingen sortering
+</option>
+
+<option value="title">
+Navn (A-Å)
+</option>
+
+<option value="players">
+Flest spillere
+</option>
+
+<option value="weight">
+Sværhedsgrad
+</option>
+
+</select>
+
+</div>
+
+</section>
+
+
+
+<section class="status-bar">
+
+<p id="movie-count">
+Viser 0 ud af 0 spil
+</p>
+
+</section>
+
+
+
+<section
+id="movie-list"
+class="movie-grid"
+>
+
+<p class="loading">
+Loader spil...
+</p>
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+<p>
+Spilcafé Board Game Database
+</p>
+
+</footer>
+
+
+
+<!-- DETAIL MODAL -->
+
+<dialog id="movie-dialog">
+
+<form method="dialog">
+
+<button
+id="close-dialog"
+aria-label="Luk"
+>
+✕
+</button>
+
+
+<div id="dialog-content">
+
+<!-- Spildetaljer indsættes via JavaScript -->
+
+</div>
+
+</form>
+
+</dialog>
+
+
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
